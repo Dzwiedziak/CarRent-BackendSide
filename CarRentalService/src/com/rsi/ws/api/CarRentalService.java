@@ -12,6 +12,7 @@ import com.rsi.ws.services.ReservationService;
 import com.rsi.ws.services.interfaces.ICarService;
 import com.rsi.ws.services.interfaces.IReservationService;
 
+import javax.jws.HandlerChain;
 import javax.jws.WebService;
 import java.util.List;
 
