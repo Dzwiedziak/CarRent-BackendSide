@@ -21,13 +21,13 @@ public class ImageService implements IImageService {
 
     @Override
     public Image getImage(int id) {
-        String imgPath = "C:/Users/niedz/Desktop/Images/";
+        String imgPath = "C:/Users/Kuba/Desktop/Images/";
         switch (id) {
             case 0:
-                imgPath += "audi.png";
+                imgPath += "tesla.png";
                 break;
             case 1:
-                imgPath += "tesla.png";
+                imgPath += "audi.png";
                 break;
             default:
                 throw new IllegalArgumentException("Invalid image id");
