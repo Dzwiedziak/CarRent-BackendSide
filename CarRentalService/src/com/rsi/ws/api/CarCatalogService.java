@@ -12,11 +12,13 @@ import com.rsi.ws.services.ReservationService;
 import com.rsi.ws.services.interfaces.ICarService;
 import com.rsi.ws.services.interfaces.IReservationService;
 
+import javax.jws.HandlerChain;
 import javax.jws.WebService;
 import java.util.List;
 import java.util.Optional;
 
 @WebService(endpointInterface = "com.rsi.ws.api.interfaces.ICarCatalogService")
+@HandlerChain(file="handler-chain.xml")
 public class CarCatalogService implements ICarCatalogService {
     IReservationRepository  reservationRepository = new ReservationRepository();
     ICarRepository carRepository = new CarRepository();
