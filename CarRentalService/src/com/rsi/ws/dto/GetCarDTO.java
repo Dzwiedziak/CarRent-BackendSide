@@ -1,7 +1,9 @@
 package com.rsi.ws.dto;
 
+import com.rsi.adapters.LocalDateTimeAdapter;
 import com.rsi.ws.model.Period;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.List;
 
 public class GetCarDTO {

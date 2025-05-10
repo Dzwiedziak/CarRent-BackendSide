@@ -1,5 +1,8 @@
 package com.rsi.ws.model;
 
+import com.rsi.adapters.LocalDateTimeAdapter;
+
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDateTime;
 
 public class Period {
@@ -14,6 +17,7 @@ public class Period {
         this.dateTimeTo = dateTimeTo;
     }
 
+    @XmlJavaTypeAdapter(LocalDateTimeAdapter.class)
     public LocalDateTime getDateTimeFrom() {
         return dateTimeFrom;
     }
@@ -22,6 +26,7 @@ public class Period {
         this.dateTimeFrom = dateTimeFrom;
     }
 
+    @XmlJavaTypeAdapter(LocalDateTimeAdapter.class)
     public LocalDateTime getDateTimeTo() {
         return dateTimeTo;
     }
