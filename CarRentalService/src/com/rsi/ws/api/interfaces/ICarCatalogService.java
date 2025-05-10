@@ -14,7 +14,7 @@ public interface ICarCatalogService {
     List<GetCarDTO> getAllCars();
 
     @WebMethod
-    Optional<GetCarDTO> getCar(@WebParam(name = "id") int id);
+    GetCarDTO getCar(@WebParam(name = "id") int id);
 
     @WebMethod
     int reserve(@WebParam(name = "reservation") AddReservationDTO reservation) throws Exception;

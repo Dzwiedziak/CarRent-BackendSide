@@ -28,8 +28,9 @@ public class CarCatalogService implements ICarCatalogService {
     }
 
     @Override
-    public Optional<GetCarDTO> getCar(int id) {
-        return carService.getOne(id);
+    public GetCarDTO getCar(int id) {
+        Optional<GetCarDTO> car = carService.getOne(id);
+        return car.orElse(null);
     }
 
     @Override

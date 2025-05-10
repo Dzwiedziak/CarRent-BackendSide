@@ -11,7 +11,7 @@ public class CarRepository implements ICarRepository {
     private final List<Car> cars = new ArrayList<Car>(){{
         add(new Car(
                 0,
-                "https://samochodowy.pl/uploads/blogs/1729238435tnahb-1713735596a494nangjpg.jpeg",
+                "https://localhost:7153/api/images/0",
                 "Tesla S",
                 5,
                 "Experience the perfect blend of power, style, and technology. This vehicle is built to impress and engineered to perform in any environment.",
@@ -19,7 +19,7 @@ public class CarRepository implements ICarRepository {
         ));
         add(new Car(
                 1,
-                "https://carleasepolska.pl/media/cache/car_details_thumbnail_small/uploads/5a5346f4bad4e35cec4164b864c6e2df_webp_converted.webp",
+                "https://localhost:7153/api/images/1",
                 "Audi A6",
                 5,
                 "\"Powerful vehicle. Rent this car and check it yourself",
