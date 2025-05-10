@@ -17,7 +17,6 @@ import javax.jws.WebService;
 import java.util.List;
 
 @WebService(endpointInterface = "com.rsi.ws.api.interfaces.ICarRentalService")
-@HandlerChain(file="handler-chain.xml")
 public class CarRentalService implements ICarRentalService {
     IReservationRepository reservationRepository = new ReservationRepository();
     ICarRepository carRepository = new CarRepository();

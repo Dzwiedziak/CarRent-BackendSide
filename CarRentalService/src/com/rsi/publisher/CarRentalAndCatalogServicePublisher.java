@@ -13,6 +13,6 @@ public class CarRentalAndCatalogServicePublisher {
 
         System.out.println("CarCatalogService is running at http://localhost:8080/CarCatalogService?wsdl");
         System.out.println("CarRentalService is running at http://localhost:8080/CarRentalService?wsdl");
-        System.out.println("CarRentalService is running at http://localhost:8080/ImageService?wsdl");
+        System.out.println("ImageService is running at http://localhost:8080/ImageService?wsdl");
     }
 }
